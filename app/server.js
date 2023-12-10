@@ -16,7 +16,7 @@ dotenv.config();
 var corsOptions = {
     origin: process.env.ALLOWED_UI_URL
   }
-app.use()
+app.use(cors())
 
 const SERVICE_PORT = process.env.SERVICE_PORT || 8000
 
