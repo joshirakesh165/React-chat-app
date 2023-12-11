@@ -15,7 +15,7 @@ import CustomError from './util/error.js';
 dotenv.config();
 
 var corsOptions = {
-    origin: process.env.ALLOWED_UI_URL,
+    origin: "http://localhost:5173/",
     credentials: true
   }
 app.use(cors(corsOptions))
