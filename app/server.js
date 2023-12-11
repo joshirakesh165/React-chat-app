@@ -13,6 +13,7 @@ import chatRouter from './chat/routes/chat.routes.js';
 import configureSocket from './socket.js';
 import CustomError from './util/error.js';
 dotenv.config();
+
 var corsOptions = {
     origin: process.env.ALLOWED_UI_URL,
     credentials: true
