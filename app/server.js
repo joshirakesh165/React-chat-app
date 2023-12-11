@@ -18,7 +18,7 @@ var allowedOrigins = ['http://localhost:3000',
                       'http://yourapp.com'];
 
 var corsOptions = {
-    origin:['http://localhost:5173']
+    origin:['http://localhost:5173',"https://chatrj.netlify.app"]
   }
 app.use(cors(corsOptions))
 
