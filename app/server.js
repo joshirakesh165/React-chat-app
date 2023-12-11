@@ -14,9 +14,10 @@ import configureSocket from './socket.js';
 import CustomError from './util/error.js';
 dotenv.config();
 var corsOptions = {
-    origin: process.env.ALLOWED_UI_URL
+    origin: process.env.ALLOWED_UI_URL,
+    credentials: true
   }
-app.use(cors())
+app.use(cors(corsOptions))
 
 const SERVICE_PORT = process.env.SERVICE_PORT || 8000
 
