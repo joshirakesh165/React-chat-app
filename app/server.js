@@ -14,8 +14,6 @@ import configureSocket from './socket.js';
 import CustomError from './util/error.js';
 dotenv.config();
 
-var allowedOrigins = ['http://localhost:3000',
-                      'http://yourapp.com'];
 
 var corsOptions = {
     origin:['http://localhost:5173',"https://chatrj.netlify.app"]
