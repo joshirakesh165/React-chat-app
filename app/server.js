@@ -14,7 +14,13 @@ import configureSocket from './socket.js';
 import CustomError from './util/error.js';
 dotenv.config();
 
-app.use(cors())
+app.use(cors({
+    origin:'*',
+    Access-Control-Allow-Credentials:true,
+    Access-Control-Allow-Origin:'*',
+    Access-Control-Allow-Methods:"GET,OPTIONS,PATCH,DELETE,POST,PUT",
+    Access-Control-Allow-Headers:"X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+}))
 // app.options('*', cors())
 
 const SERVICE_PORT = process.env.SERVICE_PORT || 8000
