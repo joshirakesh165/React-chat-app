@@ -18,7 +18,7 @@ dotenv.config();
 var corsOptions = {
     origin:['http://localhost:5173',"https://chatrj.netlify.app"]
   }
-app.use(cors(corsOptions))
+app.use(cors())
 
 const SERVICE_PORT = process.env.SERVICE_PORT || 8000
 
