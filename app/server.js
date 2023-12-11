@@ -14,11 +14,8 @@ import configureSocket from './socket.js';
 import CustomError from './util/error.js';
 dotenv.config();
 
-app.use(cors({
-        origin: "http://localhost:5173"
-    }
-))
-app.options('*', cors())
+app.use(cors())
+// app.options('*', cors())
 
 const SERVICE_PORT = process.env.SERVICE_PORT || 8000
 
