@@ -1,2 +1,2 @@
 # Chat app
-chat App Create using socket.io REACT NODE,nad mongo DB
+Simple chat App Created using socket.io REACT NODE, AND MONGO DB
